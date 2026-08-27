@@ -3,9 +3,10 @@ package com.traffic.backend.simulation;
 import com.traffic.backend.model.Road;
 import com.traffic.backend.model.Signal;
 import com.traffic.backend.service.SignalController;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class TrafficSimulator {
     private final List<Road> roads;
     private final List<Signal> signals;
